@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title> College Website</title> 
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div class="wrapper">
+  <nav> 
+   <img src="D:/yoyo.png" class="img" alt="logo">
+   <ul>
+      <li><a href="file:///C:/Users/KIIT/Documents/projectimp.html#">HOME</a></li>
+      <li><a href="https://kiit.ac.in/about/" target="_blank">ABOUT</a></li>
+      <li><a href="https://kiit.ac.in/academics/courses/" target="_blank">STREAMS</a></li>
+      <li><a href="https://kiit.ac.in/training-placement/" target="_blank">PLACEMENTS</a></li>
+      
+   </ul>
+  </nav>
+  <div class="section">
+    <h1>WE LEAD YOU TOWARDS SUCCESS.</h1>
+    <center><a href="https://youtu.be/8yvSz8TqGck" target="_blank"><button class="btn-1">COLLEGE TOUR</button></a></center> 
+    
+  </div>
+ </div>
+
+   <div id="testimony" class="testimony">
+ <hr><center><h1 style="color:white;">TESTIMONIALS</h1></center>
+   
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+ <center> <div class="numbertext">1 / 3</div>
+ 
+  <img src="D:\testimonial1.jpg" >
+  <div class="author-bio">
+   <h2> APJ ABDUL KALAM </h2>
+  
+  <div class="text"><p> I congratulate Dr. Samanta for establishing institutions of character like KIIT and KISS. I urge the students of KIIT & KISS to take lead in spreading the message of peace and non-violence in present day strife torn world.’
+
+Dr. A P J Abdul Kalam, Former President of India</p></div> 
+</div>
+</center>
+</div>
+
+<div class="mySlides fade">
+ <center> <div class="numbertext">2 / 3</div>
+ 
+  <img src="D:\testimonial2.jpg" >
+  <div class="author-bio">
+   <h2> Shri M. Hamid Ansari </h2>
+  
+  <div class="text"><p>KIIT goes way beyond what I had expected to see. I was told that it is a nice institute with many students, but what I see here is nothing less than a township.</p>
+
+</div>
+</center>
+</div>
+
+<div class="mySlides fade">
+ <center> <div class="numbertext">3 / 3</div>
+ 
+  <img src="D:\testimonial3.jpg" >
+  <div class="author-bio">
+   <h2> Dr. Robert S. Zeigler </h2>
+  
+  <div class="text"><p>I have been extraordinarily impressed with the phenomenal work undertaken by KIIT/KISS. The work of these two institutions gives me great hope that the challenges facing eastern India can be translated into opportunity. You are truly inspirations for all of the world.</p></div> 
+</div>
+</center>
+</div>
+
+
+<hr>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+</div>
+<div class="container"> 
+ <h1> FILL THE FORM IN CASE OF ANY QUERIES. </h1>
+  <form action="/action_page.php">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">First Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Last Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="country">Country</label>
+      </div>
+      <div class="col-75">
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Query</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="query" placeholder="Write something.." style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
+<footer>
+ <p>Copyright &copy; 2019,college website</p>
+</footer>
+<div id="about" class="about"></div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+</script>
+
+</body>
+</html>
+   
